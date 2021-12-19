@@ -116,9 +116,9 @@ p {
 }
 
 .head-logo {
-    /* margin-bottom: 0;
+    margin-bottom: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: white; */
+    color: white;
 }
 
 @media (max-width:991px) {
