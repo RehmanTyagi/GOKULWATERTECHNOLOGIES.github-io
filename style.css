@@ -75,7 +75,6 @@ body {
 
 .nav-link:hover {
     border-bottom: 2px solid white;
-    transition: .2s;
 }
 
 .gst-address {
@@ -98,9 +97,10 @@ p {
     color: #676777;
 }
 
-.logo-original {
+
+/* .logo-original {
     height: 100px;
-}
+} */
 
 .line-design {
     background-color: white;
@@ -108,6 +108,17 @@ p {
     width: 400px;
     position: absolute;
     border-bottom-right-radius: 4rem;
+}
+
+.logo-side-left-top {
+    display: flex;
+    align-items: center;
+}
+
+.head-logo {
+    margin-bottom: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
 }
 
 @media (max-width:991px) {
