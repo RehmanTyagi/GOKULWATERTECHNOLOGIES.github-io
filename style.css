@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    background-image: linear-gradient(111.5deg, rgba(20, 100, 196, 1) 0.4%, rgba(33, 152, 214, 1) 100.2%);
+    background-image: linear-gradient(111.5deg, rgba(20, 100, 196, 1) 0.4%, rgba(33, 152, 214, 1) 100.2%);
+}
+
+.main-header {
+    position: relative;
+}
+
+
+/* contact section started */
+
+.contact-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: whitesmoke;
+}
+
+.contact-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.media-platform {
+    display: flex;
+    gap: 1rem;
+}
+
+.media-platform a img {
+    height: 25px;
+    border-radius: 50%;
+}
+
+.tel,
+.email {
+    margin-bottom: 0;
+}
+
+@media (max-width:768px) {
+    .contact-us-section {
+        display: none;
+    }
+}
+
+
+/* contact section ended */
+
+
+/* header section started */
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-item a {
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+    transition: .2s;
+}
+
+.gst-address {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.navbar {
+    background-color: #fff !important;
+}
+
+.gst-address p {
+    font-size: 12px;
+    color: #676777;
+}
+
+.logo-original {
+    height: 100px;
+}
+
+.line-design {
+    background-color: white;
+    /* padding: 1rem 0; */
+    width: 400px;
+    position: absolute;
+    border-bottom-right-radius: 4rem;
+}
+
+@media (max-width:991px) {
+    .container-fluid {
+        flex-direction: row-reverse;
+    }
+}
+
+@media(max-width:425px) {
+    .line-design {
+        width: 100%;
+        border-radius: unset;
+    }
+}
+
+
+/* header section ended */
+
+
+/* section hero started */
+
+.hero {
+    background: url(assets/background-img/background-hero.jpg), rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+/* section hero ended */
