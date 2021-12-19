@@ -152,7 +152,7 @@ p {
 /* section hero started */
 
 .hero {
-    background: url(assets/background-img/background-hero.jpg), rgba(0, 0, 0, 0.4);
+    background: url(assets/background-img/background-hero.jpg), rgba(0, 0, 0, 0.6);
     /* height: 100vh; */
     background-size: cover;
     padding-bottom: 3rem;
@@ -183,7 +183,7 @@ p {
 .swiper-heading {
     text-align: center;
     margin: 3rem 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: whitesmoke;
 }
 
