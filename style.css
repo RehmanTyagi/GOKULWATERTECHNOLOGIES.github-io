@@ -167,7 +167,7 @@ p {
     font-size: x-large;
     text-align: center;
     width: 60%;
-    padding: 5rem 0 3rem 0;
+    padding: 7rem 0 3rem 0;
     color: white;
     display: block;
     margin: 0 auto;
@@ -182,9 +182,16 @@ p {
 
 .swiper-heading {
     text-align: center;
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     /* text-transform: uppercase; */
     color: whitesmoke;
+    font-size: xx-large;
+}
+
+@media(max-width:768px) {
+    .large-d-size {
+        display: none;
+    }
 }
 
 
