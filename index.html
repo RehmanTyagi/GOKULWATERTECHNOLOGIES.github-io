@@ -69,6 +69,92 @@
             box-shadow: 0 0 20px black;
             padding: 2rem 0;
         }
+        /* prime cards CSS */
+        /* THE MAINCONTAINER HOLDS EVERYTHING */
+        
+        .maincontainer {
+            position: relative;
+            width: 250px;
+            height: 320px;
+            background: none;
+            margin: 5rem 1rem;
+        }
+        /* THE CARD HOLDS THE FRONT AND BACK FACES */
+        
+        .thecard {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+        }
+        /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+        
+        .thecard:hover {
+            transform: rotateY(180deg);
+        }
+        /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+        
+        .thefront {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            backface-visibility: hidden;
+            overflow: hidden;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, rgba(0, 7, 128, 1) 99.8%);
+            color: white;
+        }
+        /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+        
+        .theback {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            backface-visibility: hidden;
+            overflow: hidden;
+            background: black;
+            color: white;
+            text-align: center;
+            transform: rotateY(180deg);
+        }
+        /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+        
+        .thefront h1,
+        .theback h1 {
+            font-family: 'zilla slab', sans-serif;
+            padding: 30px;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .thefront p,
+        .theback p {
+            font-family: 'zilla slab', sans-serif;
+            padding: 30px;
+            font-weight: normal;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .theback p {
+            padding: 0 10px;
+        }
+        /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+        
+        .thefront img {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 
 </head>
@@ -241,6 +327,73 @@
 
     </section>
 
+    <section class="prime-products">
+
+        <h2 class="prime-title">Our Prime Products</h2>
+
+        <div class="maincontainer">
+
+            <div class="thecard">
+
+                <div class="thefront">
+                    <h1>Sewage Treatment Plant</h1>
+                    <img src="assets/material-img/RO.jpeg" alt="" srcset="">
+
+                </div>
+
+                <div class="theback">
+                    <h1>Sewage Treatment Plant</h1>
+                    <p>Sewage treatment is a type of wastewater treatment which aims to remove contaminants from sewage to produce an effluent that is suitable for discharge to the surrounding environment or an intended reuse application, thereby preventing
+                        water pollution from raw sewage discharges.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- second card -->
+
+        <div class="maincontainer">
+
+            <div class="thecard">
+
+                <div class="thefront">
+                    <h1>Ultrafiltration</h1>
+                    <img src="assets/material-img/ETP.jpeg" alt="" srcset="">
+
+                </div>
+
+                <div class="theback">
+                    <h1>Ultrafiltration</h1>
+                    <p>Ultrafiltration is one membrane filtration process that serves as a barrier to separate harmful bacteria, viruses, and other contaminants from clean water.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- third card -->
+
+        <div class="maincontainer">
+
+            <div class="thecard">
+
+                <div class="thefront">
+                    <h1>Big Reverse Osmosis Plant</h1>
+                    <img src="assets/material-img/Sewage-plant.jpeg" alt="" srcset="">
+
+                </div>
+
+                <div class="theback">
+
+                    <h1>Big Reverse Osmosis Plant</h1>
+                    <p>Reverse Osmosis is a particular filtration process which utilizes a semipermeable, porous membrane which only enables clear water to move through it, removing the impurities and large molecules.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -275,6 +428,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

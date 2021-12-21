@@ -246,9 +246,14 @@ h3 {
 }
 
 #services {
-    background-image: linear-gradient(109.6deg, rgba(255, 174, 0, 1) 11.2%, rgba(255, 0, 0, 1) 100.2%);
+    /* background-image: linear-gradient(109.6deg, rgba(255, 174, 0, 1) 11.2%, rgba(255, 0, 0, 1) 100.2%); */
+    background-color: rgb(37, 37, 255);
     padding-bottom: 1rem;
     position: relative;
+}
+
+.swiper-free-mode {
+    padding: 2rem 0;
 }
 
 @media (min-width:880px) {
@@ -287,3 +292,39 @@ h3 {
 
 
 /* section hero ended */
+
+
+/* Prime products section started */
+
+.prime-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prime-title {
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media(max-width:768px) {
+    .maincontainer:nth-child(3) {
+        display: none;
+    }
+}
+
+@media(max-width:560px) {
+    .maincontainer:nth-child(3) {
+        display: unset;
+    }
+    .prime-products {
+        flex-direction: column;
+    }
+    .maincontainer {
+        margin: 1rem 0;
+    }
+}
+
+
+/* Prime products section end */
