@@ -308,6 +308,9 @@ h3 {
     font-weight: bold;
 }
 
+
+/* media queries started */
+
 @media(max-width:768px) {
     .maincontainer:nth-child(3) {
         display: none;
