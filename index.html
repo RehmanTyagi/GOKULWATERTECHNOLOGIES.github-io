@@ -55,6 +55,20 @@
             border-radius: 10px;
             height: 20% !important;
         }
+        
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: white;
+            background-image: linear-gradient(89.4deg, rgba(16, 136, 221, 1) 1.2%, rgba(37, 11, 142, 1) 51.5%, rgba(9, 17, 58, 1) 95.7%) !important;
+            height: 300px !important;
+        }
+        
+        .swiper-slide {
+            box-shadow: 0 0 20px black;
+            padding: 2rem 0;
+        }
     </style>
 
 </head>
@@ -136,10 +150,19 @@
 
     <section class="hero">
 
-        <h2 class="heading">We are a leading manufacturer and supplier of quality approved assortment of Water Purification Systems. Offered products are widely admired across the market for their high performance and optimum quality.</h2>
+        <div class="heading-area">
+            <h2 class="heading">We offered products are widely admired across the market for their high performance and optimum quality.</h2>
+            <p class="tagline">Providing The Ultimate Solutions Of Water, Waste Water & Air Pollution As Per NGT/CPCB/SPCB NORMS</p>
 
+            <a href="#services" class="learn-more">What We Provide</a>
+        </div>
+
+
+    </section>
+
+    <section id="services">
         <!-- Swiper -->
-        <div class="swiper mySwiper large-d-size">
+        <div class="hide-on-small swiper mySwiper large-d-size">
             <div class="swiper-heading-data">
                 <i class="fas fa-toolbox"></i>
                 <h3 class="swiper-heading">Our Services</h3>
@@ -174,6 +197,48 @@
 
         </div>
 
+
+        <!-- Swiper -->
+        <div class="hide-on-big swiper mySwiper large-d-size">
+            <div class="swiper-heading-data">
+                <i class="fas fa-toolbox"></i>
+                <h3 class="swiper-heading">Our Services</h3>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>Water Packing Machine</p>
+                    <img src="assets/material-img/water-packing.jpeg" alt="" class="wallpaper">
+                </div>
+                <div class="swiper-slide slide-no-2">
+
+                    <p>Ultrafiltration (UF)</p>
+                    <img src="assets/material-img/UF.jpeg" alt="" class="wallpaper">
+                </div>
+                <div class="swiper-slide">
+                    <p>Effluent Treatment Plant</p>
+                    <img src="assets/material-img/ETP.jpeg" alt="" class="wallpaper">
+                </div>
+                <div class="swiper-slide">
+                    <p>Sewage Treatment Plant</p>
+                    <img src="assets/material-img/Sewage-plant.jpeg" alt="" class="wallpaper">
+                </div>
+                <div class="swiper-slide">
+                    <p>Big Reverse Osmosis Plant</p>
+                    <img src="assets/material-img/RO.jpeg" alt="" class="wallpaper">
+
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+
+
+        <i id="down-hand" class="fas fa-hand-point-down"></i>
+
+
+
     </section>
 
 
@@ -183,8 +248,20 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".swiper", {
             slidesPerView: 4,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: false,
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".hide-on-big", {
+            slidesPerView: 2,
             spaceBetween: 30,
             freeMode: true,
             pagination: {
