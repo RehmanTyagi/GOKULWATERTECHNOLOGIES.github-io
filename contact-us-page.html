@@ -6,19 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .contact-me {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto Slab';
+            /* height: 100vh; */
+        }
+        
+        .user-details {
+            background-color: white;
+        }
+        
+        .left-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            gap: 1rem;
+            height: 100%;
+            color: #ecf0f1;
+            border-bottom-right-radius: 40%;
+            background-color: #3498db;
+        }
+        
+        .senders-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 2rem 0;
+        }
+        
+        .senders-details input {
+            padding: 10px 30px;
+        }
+        
+        input {
+            font-weight: bold;
+        }
+        
+        textarea {
+            font-size: 15px;
+            padding: 1rem;
+            resize: horizontal;
+            margin-top: 1rem;
+        }
+        
+        textarea::placeholder {
+            text-align: center;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        .senders-details label {
+            margin-right: 10rem;
+        }
+        
+        button {
+            padding: 10px 40px;
+            margin-top: 2rem;
+            color: white;
+            background-color: #2980b9;
+            border-radius: 10px;
+            border: none;
+        }
+        
+        button:hover {
+            cursor: pointer;
+            background-color: #e74c3c;
+            transition: .1s;
+        }
+        
+        @media (max-width:768px) {
+            .contact-me {
+                grid-template-columns: 1fr;
+            }
+            .left-content h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="contact-me">
-        <div class="user-details">
-            <label for="">Username</label>
-            <input type="text">
-            <label for="">Email</label>
-            <input type="email">
-            <label for="">Contact No</label>
-            <input type="number" maxlength="10">
 
+        <div class="left-content">
+            <h1 class="heading-one">We are very glad to assist you!</h1>
+            <p class="message-one">Dear, please add all the details to procced further. <br> We are very excited to read your message!
+            </p>
+        </div>
+
+        <div class="user-details">
+            <form action="https://formspree.io/f/mzbobnko" method="post" class="senders-details">
+                <label for="">Name</label>
+                <input placeholder="type your name" required type="text">
+                <label for="">Email</label>
+                <input required placeholder="type your email address" type="email">
+                <label for="">Contact No</label>
+                <input required placeholder="type your phone number" type="number" maxlength="10">
+                <textarea required placeholder="Write your message" name="message" id="txt-message" cols="25" rows="5"></textarea>
+                <button class="send">Send</button>
+            </form>
         </div>
     </div>
 
