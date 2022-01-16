@@ -91,6 +91,10 @@
         padding: 10px 5px;
     }
     
+    .head-logo {
+        font-size: 1.3rem !important;
+    }
+    
     .fa-check-circle {
         color: goldenrod;
         font-size: large;
@@ -101,9 +105,6 @@
         align-items: center;
         gap: .5rem;
     }
-    /* .logo-original {
-    height: 100px;
-} */
     
     .line-design {
         background-color: white;
@@ -122,6 +123,12 @@
         margin-bottom: 0;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: white;
+    }
+    
+    @media (min-width:425px) {
+        .head-logo {
+            font-size: 1.5rem !important;
+        }
     }
     
     @media (max-width:991px) {
