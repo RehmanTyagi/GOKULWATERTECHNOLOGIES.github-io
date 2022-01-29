@@ -11,6 +11,11 @@ body {
 
 /* header section started */
 
+.product-images{
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
 .list {
     padding: 1em;
 }
