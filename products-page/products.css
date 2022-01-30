@@ -141,8 +141,11 @@ body {
     margin: 0 auto;
     background-color: hsl(240, 100%, 30%);
     border: none;
+    width: 60%;
+    text-decoration: none;
     cursor: pointer;
     /* color: white; */
+    color: #fff;
     font-size: bold;
     background: rgb(193, 181, 218);
     background: radial-gradient(circle, rgba(193, 181, 218, 1) 31%, rgba(148, 187, 233, 1) 37%, rgba(238, 174, 202, 1) 85%);
