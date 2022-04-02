@@ -8,70 +8,18 @@
     <title>GokulWaterTechnologies</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.css">
     <!-- Demo styles -->
     <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-        
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-            border-radius: 10px;
-            height: 20% !important;
-        }
-        
-        .swiper-slide {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            color: white;
-            background-image: linear-gradient(89.4deg, rgba(16, 136, 221, 1) 1.2%, rgba(37, 11, 142, 1) 51.5%, rgba(9, 17, 58, 1) 95.7%) !important;
-            height: 300px !important;
-        }
-        
-        .swiper-slide {
-            box-shadow: 0 0 20px black;
-            padding: 2rem 0;
-        }
         /* prime cards CSS */
         /* THE MAINCONTAINER HOLDS EVERYTHING */
-        
+
         .maincontainer {
             position: relative;
             width: 250px;
@@ -79,8 +27,9 @@
             background: none;
             margin: 5rem 1rem;
         }
+
         /* THE CARD HOLDS THE FRONT AND BACK FACES */
-        
+
         .thecard {
             position: absolute;
             top: 0;
@@ -91,13 +40,15 @@
             transform-style: preserve-3d;
             transition: all 0.8s ease;
         }
+
         /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
-        
+
         .thecard:hover {
             transform: rotateY(180deg);
         }
+
         /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
-        
+
         .thefront {
             position: absolute;
             top: 0;
@@ -110,8 +61,9 @@
             background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, rgba(0, 7, 128, 1) 99.8%);
             color: white;
         }
+
         /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
-        
+
         .theback {
             position: absolute;
             top: 0;
@@ -126,8 +78,9 @@
             text-align: center;
             transform: rotateY(180deg);
         }
+
         /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-        
+
         .thefront h1,
         .theback h1 {
             font-family: 'zilla slab', sans-serif;
@@ -136,7 +89,7 @@
             font-size: 24px;
             text-align: center;
         }
-        
+
         .thefront p,
         .theback p {
             font-family: 'zilla slab', sans-serif;
@@ -145,76 +98,32 @@
             font-size: 12px;
             text-align: center;
         }
-        
+
         .theback p {
             padding: 0 10px;
         }
+
         /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-        
+
         .thefront img {
             width: 100%;
             height: 100%;
         }
+
         /* Prime products section started */
-        
+
         .prime-products {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
+
         .prime-title {
             margin: 2rem 0;
             text-align: center;
             font-weight: bold;
         }
-        /* media queries started */
-        
-        @media(max-width:768px) {
-            .maincontainer:nth-child(3) {
-                display: none;
-            }
-        }
-        
-        @media(max-width:560px) {
-            .maincontainer:nth-child(3) {
-                display: unset;
-            }
-            .prime-products {
-                flex-direction: column;
-            }
-            .maincontainer {
-                margin: 1rem 0 !important;
-            }
-        }
-        /* Prime products section end */
-        /* clients section started */
-        
-        .clients {
-            background-color: rgb(209, 209, 209);
-            padding: 4rem 1rem;
-            overflow-x: hidden;
-            
-        }
-        
-        .clients-heading {
-            text-align: center;
-            margin: 1rem 0;
-        }
-        
-        .clients-img {
-            height: 100% !important;
-            width: 100% !important;
-            background-image: none !important;
-            box-shadow: unset;
-            position:absolute;
-        }
-        
-        .clients-wrapper{
-            height:200px !important;
-            width:200px !important;
-            position:relative;
-        }
+
         /* clients section ended */
     </style>
 
@@ -228,10 +137,13 @@
         <!-- social media area -->
 
         <div class="media-platform">
-            <a href="https://wa.me/message/PNWFF75Y6M7HE1"><img src="assets/social media icons/whatsapp.png" alt="" srcset=""></i>
+            <a href="https://wa.me/message/PNWFF75Y6M7HE1"><img src="assets/social media icons/whatsapp.png" alt=""
+                    srcset=""></i>
                 <a href="#"><img src="assets/social media icons/twitter.png" alt="" srcset=""></i>
-                    <a href="https://www.instagram.com/gokulwatertechnologies"><img src="assets/social media icons/instagram.png" alt="" srcset=""></i>
-                        <a href="https://www.facebook.com/Gokulwatertechnologies-106810885209676"><img src="assets/social media icons/facebook.png" alt="" srcset=""></i>
+                    <a href="https://www.instagram.com/gokulwatertechnologies"><img
+                            src="assets/social media icons/instagram.png" alt="" srcset=""></i>
+                        <a href="https://www.facebook.com/Gokulwatertechnologies-106810885209676"><img
+                                src="assets/social media icons/facebook.png" alt="" srcset=""></i>
                         </a>
         </div>
         <!-- this is the contact area -->
@@ -250,7 +162,9 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -265,7 +179,8 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -298,8 +213,10 @@
     <section class="hero">
 
         <div class="heading-area">
-            <h2 class="heading">We offered products are widely admired across the market for their high performance and optimum quality.</h2>
-            <p class="tagline">Providing The Ultimate Solutions Of Water, Waste Water & Air Pollution As Per NGT/CPCB/SPCB NORMS</p>
+            <h2 class="heading">We offered products are widely admired across the market for their high performance and
+                optimum quality.</h2>
+            <p class="tagline">Providing The Ultimate Solutions Of Water, Waste Water & Air Pollution As Per
+                NGT/CPCB/SPCB NORMS</p>
 
             <a href="#services" class="learn-more">What We Provide</a>
         </div>
@@ -308,76 +225,23 @@
     </section>
 
     <section id="services">
-        <!-- Swiper -->
-        <div class="hide-on-small swiper mySwiper large-d-size">
-            <div class="swiper-heading-data">
-                <i class="fas fa-toolbox"></i>
-                <h3 class="swiper-heading">Our Services</h3>
-            </div>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <p>Water Packing Machine</p>
-                    <img src="assets/material-img/water-packing.jpeg" alt="" class="wallpaper">
-                </div>
-                <div class="swiper-slide slide-no-2">
-
-                    <p>Ultrafiltration (UF)</p>
-                    <img src="assets/material-img/UF.jpeg" alt="" class="wallpaper">
-                </div>
-                <div class="swiper-slide">
-                    <p>Effluent Treatment Plant</p>
-                    <img src="assets/material-img/ETP.jpeg" alt="" class="wallpaper">
-                </div>
-                <div class="swiper-slide">
-                    <p>Sewage Treatment Plant</p>
-                    <img src="assets/material-img/Sewage-plant.jpeg" alt="" class="wallpaper">
-                </div>
-                <div class="swiper-slide">
-                    <p>Big Reverse Osmosis Plant</p>
-                    <img src="assets/material-img/RO.jpeg" alt="" class="wallpaper">
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
-
-
-        </div>
-
 
         <!-- Swiper -->
-        <div class="hide-on-big swiper mySwiper large-d-size">
-            <div class="swiper-heading-data">
-                <i class="fas fa-toolbox"></i>
-                <h3 class="swiper-heading">Our Services</h3>
-            </div>
+        <div class="swiper mySwiper">
+            <h2 class="clients-heading">Our Valuable Services</h2>
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <p>Water Packing Machine</p>
-                    <img src="assets/material-img/water-packing.jpeg" alt="" class="wallpaper">
-                </div>
-                <div class="swiper-slide slide-no-2">
-
-                    <p>Ultrafiltration (UF)</p>
-                    <img src="assets/material-img/UF.jpeg" alt="" class="wallpaper">
-                </div>
-                <div class="swiper-slide">
-                    <p>Effluent Treatment Plant</p>
-                    <img src="assets/material-img/ETP.jpeg" alt="" class="wallpaper">
-                </div>
-                <div class="swiper-slide">
-                    <p>Sewage Treatment Plant</p>
-                    <img src="assets/material-img/Sewage-plant.jpeg" alt="" class="wallpaper">
-                </div>
-                <div class="swiper-slide">
-                    <p>Big Reverse Osmosis Plant</p>
-                    <img src="assets/material-img/RO.jpeg" alt="" class="wallpaper">
-
-                </div>
-
+                <div class="swiper-slide service-swiper"><img src="assets/material-img/ETP.jpeg" alt="client" class="client-img"></div>
+                <div class="swiper-slide service-swiper"><img src="assets/material-img/FLU.jpeg" alt="client" class="client-img"></div>
+                <div class="swiper-slide service-swiper"><img src="assets/material-img/RO-2.png" alt="client" class="client-img"></div>
+                <div class="swiper-slide service-swiper"><img src="assets/material-img/RO-3.png" alt="client" class="client-img"></div>
+                <div class="swiper-slide service-swiper"><img src="assets/material-img/sewage-flow.jpeg" alt="client"
+                        class="client-img"></div>
+                <div class="swiper-slide service-swiper"><img src="assets/material-img/Sewage-plant.jpeg" alt="client"
+                        class="client-img"></div>
+                <div class="swiper-slide service-swiper"><img src="assets/material-img/UF.jpeg" alt="client" class="client-img"></div>
+                <div class="swiper-slide service-swiper"><img src="assets/material-img/water-packing.jpeg" alt="client"
+                        class="client-img"></div>
             </div>
-            <div class="swiper-pagination"></div>
-
-
         </div>
 
 
@@ -403,7 +267,9 @@
 
                 <div class="theback">
                     <h1>Sewage Treatment Plant</h1>
-                    <p>Sewage treatment is a type of wastewater treatment which aims to remove contaminants from sewage to produce an effluent that is suitable for discharge to the surrounding environment or an intended reuse application, thereby preventing
+                    <p>Sewage treatment is a type of wastewater treatment which aims to remove contaminants from sewage
+                        to produce an effluent that is suitable for discharge to the surrounding environment or an
+                        intended reuse application, thereby preventing
                         water pollution from raw sewage discharges.</p>
                 </div>
 
@@ -424,7 +290,8 @@
 
                 <div class="theback">
                     <h1>Ultrafiltration</h1>
-                    <p>Ultrafiltration is one membrane filtration process that serves as a barrier to separate harmful bacteria, viruses, and other contaminants from clean water.</p>
+                    <p>Ultrafiltration is one membrane filtration process that serves as a barrier to separate harmful
+                        bacteria, viruses, and other contaminants from clean water.</p>
                 </div>
 
             </div>
@@ -445,7 +312,9 @@
                 <div class="theback">
 
                     <h1>Big Reverse Osmosis Plant</h1>
-                    <p>Reverse Osmosis is a particular filtration process which utilizes a semipermeable, porous membrane which only enables clear water to move through it, removing the impurities and large molecules.
+                    <p>Reverse Osmosis is a particular filtration process which utilizes a semipermeable, porous
+                        membrane which only enables clear water to move through it, removing the impurities and large
+                        molecules.
                     </p>
                 </div>
 
@@ -457,110 +326,95 @@
 
 
     <section class="clients">
-        <h2 class="clients-heading">Our Valuable Customer's</h2>
 
         <!-- Swiper -->
-        <div class="client-slides mySwiper">
-            <div class="swiper-wrapper clients-wrapper">
-
-                <img src="clients-section-img/origin-client-2.png" alt="" class="swiper-slide clients-img">
-                <img src="clients-section-img/origin-client-3.webp" alt="" class="swiper-slide clients-img">
-                <img src="clients-section-img/origin-client-1.jpg" alt="" class="swiper-slide clients-img">
-                <img src="clients-section-img/origin-client-4.png" alt="" class="swiper-slide clients-img">
-                <img src="clients-section-img/origin-client-5.png" alt="" class="swiper-slide clients-img">
+        <div class="swiper client-slide mySwiper">
+            <h2 class="clients-heading">Our Valuable Customer's</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="clients-section-img/origin-client-1.jpg" alt="client"
+                        class="client-img"></div>
+                <div class="swiper-slide"><img src="clients-section-img/origin-client-2.png" alt="client"
+                        class="client-img"></div>
+                <div class="swiper-slide"><img src="clients-section-img/origin-client-3.webp" alt="client"
+                        class="client-img"></div>
+                <div class="swiper-slide"><img src="clients-section-img/origin-client-4.png" alt="client"
+                        class="client-img"></div>
+                <div class="swiper-slide"><img src="clients-section-img/origin-client-5.png" alt="client"
+                        class="client-img"></div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
 
-    </section>
 
-    <section class="footer">
-        <div class="about-us-footer">
 
-            <!-- social media area -->
+        <section class="footer">
+            <div class="about-us-footer">
 
-            <div class="media-platform bottom-media-platform">
-                <a href="#"><img src="assets/social media icons/whatsapp.png" alt="" srcset=""></i>
-                    <a href="#"><img src="assets/social media icons/twitter.png" alt="" srcset=""></i>
-                        <a href="#"><img src="assets/social media icons/instagram.png" alt="" srcset=""></i>
-                            <a href="#"><img src="assets/social media icons/facebook.png" alt="" srcset=""></i>
-                            </a>
+                <!-- social media area -->
+
+                <div class="media-platform bottom-media-platform">
+                    <a href="#"><img src="assets/social media icons/whatsapp.png" alt="" srcset=""></i>
+                        <a href="#"><img src="assets/social media icons/twitter.png" alt="" srcset=""></i>
+                            <a href="#"><img src="assets/social media icons/instagram.png" alt="" srcset=""></i>
+                                <a href="#"><img src="assets/social media icons/facebook.png" alt="" srcset=""></i>
+                                </a>
+                </div>
+                <h3 class="about-bottom-title">About Us</h3>
+                <p class="about-us-bottom">
+                    Our sophisticated facility is well handled by a team of expert professionals, who are rich
+                    experienced and qualified in this domain. Their efforts and hard working capacity has enable us in
+                    offering quality range of this products which match up with the
+                    emerging demands of clients associated with water, effluent and industrial treatment plants.
+                    Besides, with the aid of theses efficient work force we have been able to offer this range in
+                    custom-designed models that also with proficiency.
+                    For offering an quality-approved range of this products, for practicing fair business polices and
+                    following an clients centric approaches, have enabled us to establish a huge clientele of satisfied
+                    clients.
+                </p>
             </div>
-            <h3 class="about-bottom-title">About Us</h3>
-            <p class="about-us-bottom">
-                Our sophisticated facility is well handled by a team of expert professionals, who are rich experienced and qualified in this domain. Their efforts and hard working capacity has enable us in offering quality range of this products which match up with the
-                emerging demands of clients associated with water, effluent and industrial treatment plants. Besides, with the aid of theses efficient work force we have been able to offer this range in custom-designed models that also with proficiency.
-                For offering an quality-approved range of this products, for practicing fair business polices and following an clients centric approaches, have enabled us to establish a huge clientele of satisfied clients.
-            </p>
-        </div>
 
-        <div class="contact-us-footer">
+            <div class="contact-us-footer">
 
-            <h3 class="contact-bottom-title">Contact Us</h3>
-            <p>CONTACT: Vishal G ( EXPERT in ENVIROMENT )</p>
-            <p><b>918920234339 , 8860406682</b></p>
-            <p>gokulwatertechnologies@gmail.com</p>
-            <p>GROUND FLOOR 21-B, GALI NO.2, KH. NO. 24/20, RAJEEV
-                NAGAR, MANDOLI DELHI, North East Delhi, Delhi, 110093</p>
-        </div>
-    </section>
+                <h3 class="contact-bottom-title">Contact Us</h3>
+                <p>CONTACT: Vishal G ( EXPERT in ENVIROMENT )</p>
+                <p><b>918920234339 , 8860406682</b></p>
+                <p>gokulwatertechnologies@gmail.com</p>
+                <p>GROUND FLOOR 21-B, GALI NO.2, KH. NO. 24/20, RAJEEV
+                    NAGAR, MANDOLI DELHI, North East Delhi, Delhi, 110093</p>
+            </div>
+        </section>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+            });
+        </script>
 
+        <!-- JavaScript Bundle with Popper -->
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".swiper", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: false,
-            },
-        });
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+            </script>
 
-    <script>
-        var swiper = new Swiper(".hide-on-big", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: false,
-            },
-        });
-    </script>
+        <script src="//code.tidio.co/8vbudxd8siwfunxlem0ukpvy9tqtyxr3.js" async></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".client-slides", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
+        <script src="main.js"></script>
 
-    <!-- JavaScript Bundle with Popper -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
-<script src="//code.tidio.co/8vbudxd8siwfunxlem0ukpvy9tqtyxr3.js" async></script>
-
-<script src="main.js"></script>
-
-<script src="client-side.js"></script>
+        <script src="client-side.js"></script>
 </body>
 
 </html>
